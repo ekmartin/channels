@@ -1,7 +1,9 @@
 import time
 from wsgiref.simple_server import BaseHTTPRequestHandler
+
 from django.core.management import BaseCommand, CommandError
-from channels import channel_backends, DEFAULT_CHANNEL_BACKEND
+
+from channels import DEFAULT_CHANNEL_BACKEND, channel_backends
 from channels.worker import Worker
 
 
